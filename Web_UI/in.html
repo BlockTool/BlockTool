@@ -283,7 +283,7 @@
         opacity: 1; /* Fully shown on mouse-over */
       }
       .inline{
-        width: 25%;
+        width: 50%;
         font-size: 14px;
       }
       /* Tooltip container */
@@ -337,9 +337,11 @@
 
       
       .footer {
-        position: fixed;
+        position: static;
+        height: 1%;
         left: 0;
-        bottom: 0;
+        padding-top: 20px;
+        bottom: 50%;
         width: 100%;
         background-color:transparent;
         color: white;
@@ -359,8 +361,24 @@
   <p style="font-size: 14; margin-right: 10%;">
       This tool helps architects and urban designers to model different types of city blocks in an efficient way,
       the tool draws the desired typology based on a numerous design parameteres, <br/> and it utilize the use of algorithm-based technology through a user friendly interface.
-  </p>
-</div>
+</div> </p>
+
+<div class="inline" style="color: #fff;">Select Active Curve </div>
+<input type="range" min="0" max="50" value="0" class="slider" id="myRange">
+<br> <br/>
+
+<div class="inline" style="color: #fff;">Colour Units by (Default - Footprint Area - Total Unit Area - Shape) </div>
+<input type="range" min="0" max="3" value="0" class="slider" id="myRange">
+<br> <br/>
+
+<input type="checkbox" id="checkbox" name="checkbox" value="Divide">
+<label for="checkbox"> Hide All Issues </label>
+
+<input type="checkbox" id="checkbox" name="checkbox" value="Divide" style="margin-left: 10%;">
+<label for="checkbox"> Label by Unit (Footprint) </label>
+
+<input type="checkbox" id="checkbox" name="checkbox" value="Divide" style="margin-left: 15%;">
+<label for="checkbox"> Read from File (Footprint) </label>
 
 <div class="tab-wrap">
 
@@ -401,36 +419,40 @@
 
   <div class="tab-content">
     <p style="font-size: 14px;">The following settings will be applied to the entire block or building which is based on the selected curve. </p>
+    <br> <br/>
+
     <div class="inline">Building Depth </div>
     <input type="range" min="4" max="18" value="12" class="slider" id="myRange">
-
+    <br> <br/>
+    
     <div class="inline">Sidewalk Height </div>
     <input type="range" min="-4" max="4" value="-0.2" class="slider" id="myRange">
+    <br> <br/>
 
     <div class="inline">Sidewalk Depth </div> 
     <input type="range" min="0" max="12" value="5" class="slider" id="myRange">
-    <br/>
+    <br> <br/>
 
-    <br/> 
+    <br> <br/>
     <input type="checkbox" id="checkbox" name="checkbox" value="Divide">
-    <label for="checkbox"> Divide by Distance </label> <br>
+    <label for="checkbox"> Divide by Distance </label>
+    <br> <br/> 
 
-    <br>
     <div class="inline">Unit Division Count </div> 
     <input type="range" min="0" max="30" value="10" class="slider" id="myRange">
-    <br/>
+    <br> <br/>
 
     <div class="inline">Unit Divison Measure </div> 
     <input type="range" min="10" max="60" value="20" class="slider" id="myRange">
-    <br/>
+    <br> <br/>
 
     <div class="inline">Courtyard Offset </div> 
     <input type="range" min="0" max="10" value="4" class="slider" id="myRange">
-    <br/>
+    <br> <br/>
 
     <div class="inline">Corner Unit Tolerance </div> 
     <input type="range" min="0" max="10" value="2" class="slider" id="myRange">
-    <br/> <br/> <br/>
+    <br> <br/>
 
     <button type="button">Bake Geometry</button>
     <p style="font-size: 14px;"> This will bake the geometry into a new layer on Rhino viewport, and will earase any previous layout solution using the same curve or on the same layer. </p>
@@ -464,8 +486,8 @@
 
 
 </div>
-
 </div>
+
 <div class="footer">
   <p>Authors: Sanjay Somanath & Ossama Gabrallah </p>
 </div>
