@@ -364,20 +364,20 @@
 </div> </p>
 
 <div class="inline" style="color: #fff;">Select Active Curve </div>
-<input type="range" min="0" max="50" value="0" class="slider" id="myRange">
+<input type="range" min="0" max="50" value="0" class="slider" id="active_curve_">
 <br> <br/>
 
 <div class="inline" style="color: #fff;">Colour Units by (Default - Footprint Area - Total Unit Area - Shape) </div>
-<input type="range" min="0" max="3" value="0" class="slider" id="myRange">
+<input type="range" min="0" max="3" value="0" class="slider" id="color_bldg_by_">
 <br> <br/>
 
-<input type="checkbox" id="checkbox" name="checkbox" value="Divide">
+<input type="checkbox" id="hide_all_issues_" name="checkbox" value="Divide">
 <label for="checkbox"> Hide All Issues </label>
 
-<input type="checkbox" id="checkbox" name="checkbox" value="Divide" style="margin-left: 10%;">
+<input type="checkbox" id="label_by_unit_" name="checkbox" value="Divide" style="margin-left: 10%;">
 <label for="checkbox"> Label by Unit (Footprint) </label>
 
-<input type="checkbox" id="checkbox" name="checkbox" value="Divide" style="margin-left: 15%;">
+<input type="checkbox" id="read_from_file_" name="checkbox" value="Divide" style="margin-left: 15%;">
 <label for="checkbox"> Read from File (Footprint) </label>
 
 <div class="tab-wrap">
@@ -422,36 +422,36 @@
     <br> <br/>
 
     <div class="inline">Building Depth </div>
-    <input type="range" min="4" max="18" value="12" class="slider" id="myRange">
+    <input type="range" min="4" max="18" value="12" class="slider" id="input_bldg_depth_">
     <br> <br/>
     
     <div class="inline">Sidewalk Height </div>
-    <input type="range" min="-4" max="4" value="-0.2" class="slider" id="myRange">
+    <input type="range" min="-4" max="4" value="-0.2" class="slider" id="input_sidewalk_ht_">
     <br> <br/>
 
     <div class="inline">Sidewalk Depth </div> 
-    <input type="range" min="0" max="12" value="5" class="slider" id="myRange">
+    <input type="range" min="0" max="12" value="5" class="slider" id="input_sidewalk_depth_">
     <br> <br/>
 
     <br> <br/>
-    <input type="checkbox" id="checkbox" name="checkbox" value="Divide">
+    <input type="checkbox" id="div_unit_type_" name="checkbox" value="Divide">
     <label for="checkbox"> Divide by Distance </label>
     <br> <br/> 
 
     <div class="inline">Unit Division Count </div> 
-    <input type="range" min="0" max="30" value="10" class="slider" id="myRange">
+    <input type="range" min="0" max="30" value="10" class="slider" id="input_unit_divide_count_">
     <br> <br/>
 
     <div class="inline">Unit Divison Measure </div> 
-    <input type="range" min="10" max="60" value="20" class="slider" id="myRange">
+    <input type="range" min="10" max="60" value="20" class="slider" id="input_unit_divide_distance_">
     <br> <br/>
 
     <div class="inline">Courtyard Offset </div> 
-    <input type="range" min="0" max="10" value="4" class="slider" id="myRange">
+    <input type="range" min="0" max="10" value="4" class="slider" id="input_courtyard_offset_">
     <br> <br/>
 
     <div class="inline">Corner Unit Tolerance </div> 
-    <input type="range" min="0" max="10" value="2" class="slider" id="myRange">
+    <input type="range" min="0" max="10" value="2" class="slider" id="input_corner_unit_buffer_">
     <br> <br/>
 
     <button type="button">Bake Geometry</button>
