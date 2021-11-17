@@ -8,285 +8,264 @@ var data = [
     }, 
     {
         color: "#fec89aff", 
-        id: "B0", 
+        id: "B1", 
         parent: "0", 
         name: "Block 1"
     }, 
     {
         color: "#ffd7baff", 
-        id: "B1", 
+        id: "B2", 
         parent: "0", 
         name: "Block 2"
     }, 
     {
         color: "#ffe5d9ff", 
-        id: "B2", 
+        id: "B3", 
         parent: "0", 
         name: "Block 3"
     }, 
     {
         color: "#ece4dbff", 
-        id: "B3", 
+        id: "B4", 
         parent: "0", 
         name: "Block 4"
     }, 
     {
         color: "#d8e2dcff", 
-        id: "B4", 
-        parent: "0", 
-        name: "Block 5"
-    }, 
-    {
-        color: "#e8e8e4ff", 
         id: "B5", 
         parent: "0", 
-        name: "Block 6"
+        name: "Block 5"
     }
 ,
     {
-        "value": 2920, 
-        "parent": "B0", 
+        "value": 480, 
+        "parent": "B1", 
         "name": "unit 0"
     }, 
     {
-        "value": 3650, 
-        "parent": "B0", 
-        "name": "unit 1"
-    }, 
-    {
-        "value": 9624, 
-        "parent": "B0", 
-        "name": "unit 2"
-    }, 
-    {
-        "value": 8020, 
-        "parent": "B0", 
-        "name": "unit 3"
-    }, 
-    {
-        "value": 2920, 
-        "parent": "B0", 
-        "name": "unit 4"
-    }, 
-    {
-        "value": 4380, 
-        "parent": "B0", 
-        "name": "unit 5"
-    }, 
-    {
-        "value": 9624, 
-        "parent": "B0", 
-        "name": "unit 6"
-    }, 
-    {
-        "value": 6416, 
-        "parent": "B0", 
-        "name": "unit 7"
-    }, 
-    {
-        "value": 5090, 
+        "value": 1920, 
         "parent": "B1", 
         "name": "unit 1"
     }, 
     {
-        "value": 6108, 
+        "value": 720, 
         "parent": "B1", 
         "name": "unit 2"
     }, 
     {
-        "value": 5090, 
+        "value": 1920, 
         "parent": "B1", 
         "name": "unit 3"
     }, 
     {
-        "value": 8720, 
+        "value": 480, 
         "parent": "B1", 
         "name": "unit 4"
     }, 
     {
-        "value": 6972, 
+        "value": 2304, 
         "parent": "B1", 
         "name": "unit 5"
     }, 
     {
-        "value": 6108, 
+        "value": 720, 
         "parent": "B1", 
         "name": "unit 6"
     }, 
     {
-        "value": 4072, 
+        "value": 1536, 
         "parent": "B1", 
         "name": "unit 7"
     }, 
     {
-        "value": 3054, 
-        "parent": "B1", 
-        "name": "unit 8"
-    }, 
-    {
-        "value": 10900, 
-        "parent": "B1", 
-        "name": "unit 9"
-    }, 
-    {
-        "value": 7000, 
+        "value": 1060, 
         "parent": "B2", 
         "name": "unit 1"
     }, 
     {
-        "value": 3768, 
+        "value": 1272, 
         "parent": "B2", 
         "name": "unit 2"
     }, 
     {
-        "value": 7000, 
+        "value": 2840, 
         "parent": "B2", 
         "name": "unit 3"
     }, 
     {
-        "value": 2512, 
+        "value": 2272, 
         "parent": "B2", 
         "name": "unit 4"
     }, 
     {
-        "value": 8400, 
+        "value": 1272, 
         "parent": "B2", 
         "name": "unit 5"
     }, 
     {
-        "value": 3768, 
+        "value": 1272, 
         "parent": "B2", 
         "name": "unit 6"
     }, 
     {
-        "value": 5600, 
+        "value": 2272, 
         "parent": "B2", 
         "name": "unit 7"
     }, 
     {
-        "value": 6350, 
+        "value": 1568, 
         "parent": "B3", 
         "name": "unit 1"
     }, 
     {
-        "value": 7620, 
+        "value": 1881, 
         "parent": "B3", 
         "name": "unit 2"
     }, 
     {
-        "value": 6350, 
+        "value": 1568, 
         "parent": "B3", 
         "name": "unit 3"
     }, 
     {
-        "value": 10736, 
+        "value": 1254, 
         "parent": "B3", 
         "name": "unit 4"
     }, 
     {
-        "value": 8484, 
+        "value": 1881, 
         "parent": "B3", 
         "name": "unit 5"
     }, 
     {
-        "value": 7620, 
+        "value": 1881, 
         "parent": "B3", 
         "name": "unit 6"
     }, 
     {
-        "value": 5080, 
+        "value": 1254, 
         "parent": "B3", 
         "name": "unit 7"
     }, 
     {
-        "value": 3810, 
+        "value": 941, 
         "parent": "B3", 
         "name": "unit 8"
     }, 
     {
-        "value": 13420, 
+        "value": 1568, 
         "parent": "B3", 
         "name": "unit 9"
     }, 
     {
-        "value": 5100, 
+        "value": 3762, 
+        "parent": "B3", 
+        "name": "unit 10"
+    }, 
+    {
+        "value": 2093, 
         "parent": "B4", 
         "name": "unit 1"
     }, 
     {
-        "value": 2628, 
+        "value": 2618, 
         "parent": "B4", 
         "name": "unit 2"
     }, 
     {
-        "value": 5100, 
+        "value": 2795, 
         "parent": "B4", 
         "name": "unit 3"
     }, 
     {
-        "value": 1752, 
+        "value": 1674, 
         "parent": "B4", 
         "name": "unit 4"
     }, 
     {
-        "value": 6120, 
+        "value": 2348, 
         "parent": "B4", 
         "name": "unit 5"
     }, 
     {
-        "value": 2628, 
+        "value": 2229, 
         "parent": "B4", 
         "name": "unit 6"
     }, 
     {
-        "value": 4080, 
+        "value": 1454, 
         "parent": "B4", 
         "name": "unit 7"
     }, 
     {
-        "value": 3500, 
+        "value": 1123, 
+        "parent": "B4", 
+        "name": "unit 8"
+    }, 
+    {
+        "value": 1942, 
+        "parent": "B4", 
+        "name": "unit 9"
+    }, 
+    {
+        "value": 2219, 
+        "parent": "B4", 
+        "name": "unit 10"
+    }, 
+    {
+        "value": 1698, 
+        "parent": "B4", 
+        "name": "unit 11"
+    }, 
+    {
+        "value": 2998, 
         "parent": "B5", 
         "name": "unit 1"
     }, 
     {
-        "value": 5064, 
+        "value": 2968, 
         "parent": "B5", 
         "name": "unit 2"
     }, 
     {
-        "value": 3500, 
+        "value": 2473, 
         "parent": "B5", 
         "name": "unit 3"
     }, 
     {
-        "value": 6176, 
+        "value": 2870, 
         "parent": "B5", 
         "name": "unit 4"
     }, 
     {
-        "value": 4200, 
+        "value": 2968, 
         "parent": "B5", 
         "name": "unit 5"
     }, 
     {
-        "value": 4200, 
+        "value": 2382, 
         "parent": "B5", 
         "name": "unit 6"
     }, 
     {
-        "value": 3376, 
+        "value": 1979, 
         "parent": "B5", 
         "name": "unit 7"
     }, 
     {
-        "value": 2100, 
+        "value": 2467, 
         "parent": "B5", 
         "name": "unit 8"
     }, 
     {
-        "value": 7720, 
+        "value": 2473, 
         "parent": "B5", 
         "name": "unit 9"
+    }, 
+    {
+        "value": 2968, 
+        "parent": "B5", 
+        "name": "unit 10"
     }
 ];
 
