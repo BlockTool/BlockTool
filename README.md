@@ -1,5 +1,7 @@
 # BlockTool
 ![Block tool GIF](.github/src/SOS_Demo.gif)
+![Block tool GIF](.github/src/BlockToolDemo.gif)
+![Block tool GIF](.github/src/SOS_Chart.gif)
 # Design Tools (Minimum Viable Product)
 Description :
 ## Tool 1
