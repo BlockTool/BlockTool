@@ -7,265 +7,266 @@ var data = [
         name: " "
     }, 
     {
-        color: "#fec89aff", 
+        color: "#40dab6", 
         id: "B1", 
         parent: "0", 
         name: "Block 1"
     }, 
     {
-        color: "#ffd7baff", 
+        color: "#e7e3cd", 
         id: "B2", 
         parent: "0", 
         name: "Block 2"
     }, 
     {
-        color: "#ffe5d9ff", 
+        color: "#b3e4cd", 
         id: "B3", 
         parent: "0", 
         name: "Block 3"
     }, 
     {
-        color: "#ece4dbff", 
+        color: "#e0dbca", 
         id: "B4", 
         parent: "0", 
         name: "Block 4"
     }, 
     {
-        color: "#d8e2dcff", 
+        color: "#de7580", 
         id: "B5", 
         parent: "0", 
         name: "Block 5"
+    }, 
+    {
+        color: "#be456b", 
+        id: "B6", 
+        parent: "0", 
+        name: "Block 6"
     }
 ,
     {
-        "value": 480, 
+        "value": 1872, 
         "parent": "B1", 
         "name": "unit 0"
     }, 
     {
-        "value": 1920, 
+        "value": 540, 
         "parent": "B1", 
         "name": "unit 1"
+    }, 
+    {
+        "value": 2160, 
+        "parent": "B1", 
+        "name": "unit 2"
+    }, 
+    {
+        "value": 2340, 
+        "parent": "B1", 
+        "name": "unit 3"
+    }, 
+    {
+        "value": 432, 
+        "parent": "B1", 
+        "name": "unit 4"
+    }, 
+    {
+        "value": 2160, 
+        "parent": "B1", 
+        "name": "unit 5"
+    }, 
+    {
+        "value": 1010, 
+        "parent": "B2", 
+        "name": "unit 1"
+    }, 
+    {
+        "value": 1212, 
+        "parent": "B2", 
+        "name": "unit 2"
+    }, 
+    {
+        "value": 2740, 
+        "parent": "B2", 
+        "name": "unit 3"
+    }, 
+    {
+        "value": 2192, 
+        "parent": "B2", 
+        "name": "unit 4"
+    }, 
+    {
+        "value": 1212, 
+        "parent": "B2", 
+        "name": "unit 5"
+    }, 
+    {
+        "value": 1212, 
+        "parent": "B2", 
+        "name": "unit 6"
+    }, 
+    {
+        "value": 2192, 
+        "parent": "B2", 
+        "name": "unit 7"
     }, 
     {
         "value": 720, 
-        "parent": "B1", 
-        "name": "unit 2"
-    }, 
-    {
-        "value": 1920, 
-        "parent": "B1", 
-        "name": "unit 3"
-    }, 
-    {
-        "value": 480, 
-        "parent": "B1", 
-        "name": "unit 4"
-    }, 
-    {
-        "value": 2304, 
-        "parent": "B1", 
-        "name": "unit 5"
-    }, 
-    {
-        "value": 720, 
-        "parent": "B1", 
-        "name": "unit 6"
-    }, 
-    {
-        "value": 1536, 
-        "parent": "B1", 
-        "name": "unit 7"
-    }, 
-    {
-        "value": 1060, 
-        "parent": "B2", 
-        "name": "unit 1"
-    }, 
-    {
-        "value": 1272, 
-        "parent": "B2", 
-        "name": "unit 2"
-    }, 
-    {
-        "value": 2840, 
-        "parent": "B2", 
-        "name": "unit 3"
-    }, 
-    {
-        "value": 2272, 
-        "parent": "B2", 
-        "name": "unit 4"
-    }, 
-    {
-        "value": 1272, 
-        "parent": "B2", 
-        "name": "unit 5"
-    }, 
-    {
-        "value": 1272, 
-        "parent": "B2", 
-        "name": "unit 6"
-    }, 
-    {
-        "value": 2272, 
-        "parent": "B2", 
-        "name": "unit 7"
-    }, 
-    {
-        "value": 1568, 
         "parent": "B3", 
         "name": "unit 1"
     }, 
     {
-        "value": 1881, 
+        "value": 864, 
         "parent": "B3", 
         "name": "unit 2"
     }, 
     {
-        "value": 1568, 
+        "value": 2160, 
         "parent": "B3", 
         "name": "unit 3"
     }, 
     {
-        "value": 1254, 
+        "value": 1728, 
         "parent": "B3", 
         "name": "unit 4"
     }, 
     {
-        "value": 1881, 
+        "value": 864, 
         "parent": "B3", 
         "name": "unit 5"
     }, 
     {
-        "value": 1881, 
+        "value": 864, 
         "parent": "B3", 
         "name": "unit 6"
     }, 
     {
-        "value": 1254, 
+        "value": 1728, 
         "parent": "B3", 
         "name": "unit 7"
     }, 
     {
-        "value": 941, 
-        "parent": "B3", 
-        "name": "unit 8"
-    }, 
-    {
-        "value": 1568, 
-        "parent": "B3", 
-        "name": "unit 9"
-    }, 
-    {
-        "value": 3762, 
-        "parent": "B3", 
-        "name": "unit 10"
-    }, 
-    {
-        "value": 2093, 
+        "value": 2460, 
         "parent": "B4", 
         "name": "unit 1"
     }, 
     {
-        "value": 2618, 
+        "value": 2088, 
         "parent": "B4", 
         "name": "unit 2"
     }, 
     {
-        "value": 2795, 
+        "value": 1740, 
         "parent": "B4", 
         "name": "unit 3"
     }, 
     {
-        "value": 1674, 
+        "value": 3360, 
         "parent": "B4", 
         "name": "unit 4"
     }, 
     {
-        "value": 2348, 
+        "value": 2088, 
         "parent": "B4", 
         "name": "unit 5"
     }, 
     {
-        "value": 2229, 
+        "value": 2952, 
         "parent": "B4", 
         "name": "unit 6"
     }, 
     {
-        "value": 1454, 
+        "value": 1392, 
         "parent": "B4", 
         "name": "unit 7"
     }, 
     {
-        "value": 1123, 
+        "value": 1044, 
         "parent": "B4", 
         "name": "unit 8"
     }, 
     {
-        "value": 1942, 
+        "value": 4200, 
         "parent": "B4", 
         "name": "unit 9"
     }, 
     {
-        "value": 2219, 
-        "parent": "B4", 
-        "name": "unit 10"
-    }, 
-    {
-        "value": 1698, 
-        "parent": "B4", 
-        "name": "unit 11"
-    }, 
-    {
-        "value": 2998, 
+        "value": 1210, 
         "parent": "B5", 
         "name": "unit 1"
     }, 
     {
-        "value": 2968, 
+        "value": 1452, 
         "parent": "B5", 
         "name": "unit 2"
     }, 
     {
-        "value": 2473, 
+        "value": 3140, 
         "parent": "B5", 
         "name": "unit 3"
     }, 
     {
-        "value": 2870, 
+        "value": 2512, 
         "parent": "B5", 
         "name": "unit 4"
     }, 
     {
-        "value": 2968, 
+        "value": 1452, 
         "parent": "B5", 
         "name": "unit 5"
     }, 
     {
-        "value": 2382, 
+        "value": 1452, 
         "parent": "B5", 
         "name": "unit 6"
     }, 
     {
-        "value": 1979, 
+        "value": 2512, 
         "parent": "B5", 
         "name": "unit 7"
     }, 
     {
-        "value": 2467, 
-        "parent": "B5", 
+        "value": 2990, 
+        "parent": "B6", 
+        "name": "unit 1"
+    }, 
+    {
+        "value": 2724, 
+        "parent": "B6", 
+        "name": "unit 2"
+    }, 
+    {
+        "value": 2270, 
+        "parent": "B6", 
+        "name": "unit 3"
+    }, 
+    {
+        "value": 4208, 
+        "parent": "B6", 
+        "name": "unit 4"
+    }, 
+    {
+        "value": 2724, 
+        "parent": "B6", 
+        "name": "unit 5"
+    }, 
+    {
+        "value": 3588, 
+        "parent": "B6", 
+        "name": "unit 6"
+    }, 
+    {
+        "value": 1816, 
+        "parent": "B6", 
+        "name": "unit 7"
+    }, 
+    {
+        "value": 1362, 
+        "parent": "B6", 
         "name": "unit 8"
     }, 
     {
-        "value": 2473, 
-        "parent": "B5", 
+        "value": 5260, 
+        "parent": "B6", 
         "name": "unit 9"
-    }, 
-    {
-        "value": 2968, 
-        "parent": "B5", 
-        "name": "unit 10"
     }
 ];
 
@@ -302,7 +303,7 @@ Highcharts.chart("container", {
         },
         style: {
           textOutline: false,
-          color: "#000000"
+          color: "#FFFFFF"
         }
       },
       levels: [
