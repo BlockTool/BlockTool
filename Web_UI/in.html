@@ -351,146 +351,363 @@
     </style>
 </head>
 <body>
-<p> INPUT
-</p>
-<h1>
-    City Block    
-</h1>
-<p style="margin-top: 0px;">VERSION 0.01</p>
-<div>
-  <p style="font-size: 14; margin-right: 10%;">
-      This tool helps architects and urban designers to model different types of city blocks in an efficient way,
-      the tool draws the desired typology based on a numerous design parameteres, <br/> and it utilize the use of algorithm-based technology through a user friendly interface.
-</div> </p>
+  <p> INPUT
+  </p>
+  <h1>
+      City Block    
+  </h1>
+  <p style="margin-top: 0px;">VERSION 0.01</p>
+  <div>
+    <p style="font-size: 14; margin-right: 10%;">
+        This tool helps architects and urban designers to model different types of city blocks in an efficient way,
+        the tool draws the desired typology based on a numerous design parameteres, 
+        <br/> and it utilize the use of algorithm-based technology through a user friendly interface.
+    </p>
+</div> 
 
-<div class="inline" style="color: #fff;">Select Active Curve </div>
-<input type="range" min="0" max="50" value="0" class="slider" id="active_curve_">
-<br> <br/>
+  <div class="inline" style="color: #fff;">Select Active Curve </div>
+  <input type="range" min="0" max="50" value="0" class="slider" id="active_curve_">
+  <br> <br/>
 
-<div class="inline" style="color: #fff;">Colour Units by (Default - Footprint Area - Total Unit Area - Shape) </div>
-<input type="range" min="0" max="3" value="0" class="slider" id="color_bldg_by_">
-<br> <br/>
+  <div class="inline" style="color: #fff;">Colour Units by (Default - Footprint Area - Total Unit Area - Shape) </div>
+  <input type="range" min="0" max="3" value="0" class="slider" id="color_bldg_by_">
+  <br> <br/>
 
-<input type="checkbox" id="hide_all_issues_" name="checkbox" value="Divide">
-<label for="checkbox"> Hide All Issues </label>
+  <input type="checkbox" id="hide_all_issues_" name="checkbox" value="Divide">
+  <label for="checkbox"> Hide All Issues </label>
 
-<input type="checkbox" id="label_by_unit_" name="checkbox" value="Divide" style="margin-left: 10%;">
-<label for="checkbox"> Label by Unit (Footprint) </label>
+  <input type="checkbox" id="label_by_unit_" name="checkbox" value="Divide" style="margin-left: 10%;">
+  <label for="checkbox"> Label by Unit (Footprint) </label>
 
-<input type="checkbox" id="read_from_file_" name="checkbox" value="Divide" style="margin-left: 15%;">
-<label for="checkbox"> Read from File (Footprint) </label>
+  <input type="checkbox" id="read_from_file_" name="checkbox" value="Divide" style="margin-left: 15%;">
+  <label for="checkbox"> Read from File (Footprint) </label>
 
-<div class="tab-wrap">
+  <!-- TAB CREATION-->
+  <div class="tab-wrap">
 
-  <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-  <label for="tab1" class="tooltip"> Design Parameters
-    <span class="tooltiptext" >Change the general variables of your design, such as: building depth, sidewalk, and the amount of units in the block </span>
-  </label>
+    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+    <label for="tab1" class="tooltip"> Design Parameters
+      <span class="tooltiptext" >Change the general variables of your design, such as: building depth, sidewalk, and the amount of units in the block </span>
+    </label>
 
-  <input type="radio" id="tab2" name="tabGroup1" class="tab">
-  <label for="tab2" class="tooltip"> Floor Numbers
-    <span class="tooltiptext" >Change the number of floors of each unit </span>
-  </label>
+    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+    <label for="tab2" class="tooltip"> Floor Numbers
+      <span class="tooltiptext" >Change the number of floors of each unit </span>
+    </label>
 
-  <input type="radio" id="tab3" name="tabGroup1" class="tab">
-  <label for="tab3" class="tooltip"> Floor Heights
-    <span class="tooltiptext" >Choose the height of floors: ground, typical, and top floor </span>
-  </label>
+    <input type="radio" id="tab3" name="tabGroup1" class="tab">
+    <label for="tab3" class="tooltip"> Floor Heights
+      <span class="tooltiptext" >Choose the height of floors: ground, typical, and top floor </span>
+    </label>
 
-  <input type="radio" id="tab4" name="tabGroup1" class="tab">
-  <label for="tab3" class="tooltip"> Roof Types
-    <span class="tooltiptext" >Choose the desired type of roof of each unit</span>
-  </label>
+    <input type="radio" id="tab4" name="tabGroup1" class="tab">
+    <label for="tab4" class="tooltip"> Roof Types
+      <span class="tooltiptext" >Choose the desired type of roof of each unit</span>
+    </label>
 
-  <input type="radio" id="tab5" name="tabGroup1" class="tab">
-  <label for="tab3" class="tooltip"> Roof Parameters
-    <span class="tooltiptext" >Change the parameters of the roofs, such as: height, angle, and centerline </span>
-  </label>
+    <input type="radio" id="tab5" name="tabGroup1" class="tab">
+    <label for="tab5" class="tooltip"> Roof Parameters
+      <span class="tooltiptext" >Change the parameters of the roofs, such as: height, angle, and centerline </span>
+    </label>
 
-  <input type="radio" id="tab6" name="tabGroup1" class="tab">
-  <label for="tab3" class="tooltip"> Appearance
-    <span class="tooltiptext" >Choose the appearance settings of your layout: buildings, roofs, and courtyard</span>
-  </label>
+    <input type="radio" id="tab6" name="tabGroup1" class="tab">
+    <label for="tab6" class="tooltip"> Appearance
+      <span class="tooltiptext" >Choose the appearance settings of your layout: buildings, roofs, and courtyard</span>
+    </label>
 
-  <input type="radio" id="tab7" name="tabGroup1" class="tab">
-  <label for="tab3" class="tooltip"> Conditions
-    <span class="tooltiptext" >Set the general rules and conditions of your design, such as: the tolerance of the corner unit, the minimum surface area per unit, and  </span>
-  </label>
+    <input type="radio" id="tab7" name="tabGroup1" class="tab">
+    <label for="tab7" class="tooltip"> Conditions
+      <span class="tooltiptext" >Set the general rules and conditions of your design, such as: the tolerance of the corner unit, the minimum surface area per unit, and  </span>
+    </label>
 
-  <div class="tab-content">
-    <p style="font-size: 14px;">The following settings will be applied to the entire block or building which is based on the selected curve. </p>
-    <br> <br/>
+    <input type="radio" id="tab8" name="tabGroup1" class="tab">
+    <label for="tab8" class="tooltip"> Save and Export
+      <span class="tooltiptext" >Save and export your designs in Rhino and to other programs  </span>
+    </label>
 
-    <div class="inline">Building Depth </div>
-    <input type="range" min="4" max="18" value="12" class="slider" id="input_bldg_depth_">
-    <br> <br/>
+    <!-- Start filling in inputs for the tabs here -->
+    <!-- DESIGN PARAMETERS-->
+
+    <div class="tab-content">
+      <h3>DESIGN PARAMETERS</h3>
+      <p style="font-size: 14px;">The following settings will be applied to the entire block or building which is based on the selected curve. </p>
+      <br> <br/>
+
+      <div class="inline">Building Depth </div>
+      <input type="range" min="4" max="18" value="12" class="slider" id="input_bldg_depth_">
+      <br> <br/>
+      
+      <div class="inline">Sidewalk Height </div>
+      <input type="range" min="-4" max="4" value="-0.2" class="slider" id="input_sidewalk_ht_">
+      <br> <br/>
+
+      <div class="inline">Sidewalk Depth </div> 
+      <input type="range" min="0" max="12" value="5" class="slider" id="input_sidewalk_depth_">
+      <br> <br/>
+
+      <br> <br/>
+      <input type="checkbox" id="div_unit_type_" name="checkbox" value="Divide">
+      <label for="checkbox"> Divide by Distance </label>
+      <br> <br/> 
+
+      <div class="inline">Unit Division Count </div> 
+      <input type="range" min="0" max="30" value="10" class="slider" id="input_unit_divide_count_">
+      <br> <br/>
+
+      <div class="inline">Unit Divison Measure </div> 
+      <input type="range" min="10" max="60" value="20" class="slider" id="input_unit_divide_distance_">
+      <br> <br/>
+
+      <div class="inline">Courtyard Offset </div> 
+      <input type="range" min="0" max="10" value="4" class="slider" id="input_courtyard_offset_">
+      <br> <br/>
+
+      <br> <br/>
+      <input type="checkbox" id="div_unit_type_" name="checkbox" value="Divide">
+      <label for="checkbox"> Show Corner Unit Circle </label>
+      
+      <br> <br/>
+      <div class="inline">Corner Unit Tolerance </div> 
+      <input type="range" min="0" max="10" value="2" class="slider" id="input_corner_unit_buffer_">
+
+      <br> <br/>
+      <input type="checkbox" id="flip_open_curve_" name="checkbox" value="Divide">
+      <label for="checkbox"> Flip Open Curve </label> 
+      <br> <br/> 
+    </div>
+
+    <!-- FLOOR NUMBERS-->
+    <div class="tab-content">
+      <h3>FLOOR NUMBERS</h3>
+      <p style="font-size: 14px;">The following settings assign the number of floors to each block </p>
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_01">
+
+      <div class="inline">Building 2 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_02">
+
+      <div class="inline">Building 3 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_03">
+
+      <div class="inline">Building 4 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_04">
+
+      <div class="inline">Building 5 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_05">
+
+      <div class="inline">Building 6 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_06">
+
+      <div class="inline">Building 7 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_07">
+
+      <div class="inline">Building 8 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_08">
+
+      <div class="inline">Building 9 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_09">
+
+      <div class="inline">Building 10 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_10">
+
+      <div class="inline">Building 11- Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_11">
+
+      <div class="inline">Building 12 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_12">
+
+      <div class="inline">Building 13 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_13">
+
+      <div class="inline">Building 14 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_14">
+
+      <div class="inline">Building 15 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_15">
+
+      <div class="inline">Building 16 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_16">
+
+      <div class="inline">Building 17 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_17">
+
+      <div class="inline">Building 18 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_18">
+
+      <div class="inline">Building 19 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_19">
+
+      <div class="inline">Building 20 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_flr_20">
+    </div>
+
+    <!--------------------------------- FLOOR HEIGHT--------------------------------->
+    <div class="tab-content">
+      <h3>FLOOR HEIGHTS</h3>
+      <p style="font-size: 14px;">The following settings assign the typical floor height to each block </p>
+      <div class="inline">Building 1 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_01">
+
+      <div class="inline">Building 2 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_02">
+
+      <div class="inline">Building 3 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_03">
+
+      <div class="inline">Building 4 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_04">
+
+      <div class="inline">Building 5 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_05">
+
+      <div class="inline">Building 6 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_06">
+
+      <div class="inline">Building 7 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_07">
+
+      <div class="inline">Building 8 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_08">
+
+      <div class="inline">Building 9 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_09">
+
+      <div class="inline">Building 10 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_10">
+
+      <div class="inline">Building 11- Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_11">
+
+      <div class="inline">Building 12 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_12">
+
+      <div class="inline">Building 13 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_13">
+
+      <div class="inline">Building 14 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_14">
+
+      <div class="inline">Building 15 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_15">
+
+      <div class="inline">Building 16 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_16">
+
+      <div class="inline">Building 17 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_17">
+
+      <div class="inline">Building 18 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_18">
+
+      <div class="inline">Building 19 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_19">
+
+      <div class="inline">Building 20 - Floor height  </div>
+      <input type="range" min="3" max="8" value="3" class="slider" id="bld_ht_20">
+    </div>
+
+    <!--------------------------------- ROOF TYPES--------------------------------->
+    <div class="tab-content">
+      <h3>ROOF TYPES</h3>
+      <p style="font-size: 14px;">The following settings assign the roof type to each block </p>
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_01">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_02">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_03">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_044">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_05">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_06">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_07">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_08">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_09">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_10">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_11">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_12">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_13">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_14">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_15">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_16">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_17">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_18">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_19">
+
+      <div class="inline">Building 1 - Number of Floors  </div>
+      <input type="range" min="1" max="20" value="3" class="slider" id="bld_roof_20">
+    </div>
+
+    <!--------------------------------- ROOF PARAMTERS--------------------------------->
+    <div class="tab-content">
+      <h3>ROOF PARAMTERS</h3>
+      <p style="font-size: 14px;">The following settings assign the roof type to each block </p>
+    </div>
     
-    <div class="inline">Sidewalk Height </div>
-    <input type="range" min="-4" max="4" value="-0.2" class="slider" id="input_sidewalk_ht_">
-    <br> <br/>
+    
+    <!--------------------------------- APPEARANCE--------------------------------->
+    <div class="tab-content">
+      <h3>APPEARANCE</h3>
+      <p style="font-size: 14px;">The following settings assign the roof type to each block </p>
+      <button type="button">Bake Geometry</button>
+      <p style="font-size: 14px;"> This will bake the geometry into a new layer on Rhino viewport, and will earase any previous layout solution using the same curve or on the same layer. </p>
+    </div>
+    
+    
+    <!--------------------------------- CONDITIONS--------------------------------->
+    <div class="tab-content">
+      <h3>CONDITIONS</h3>
+      <p style="font-size: 14px;">The following settings assign the roof type to each block </p>
+      <button type="button">Bake Geometry</button>
+      <p style="font-size: 14px;"> This will bake the geometry into a new layer on Rhino viewport, and will earase any previous layout solution using the same curve or on the same layer. </p>
+    </div>
 
-    <div class="inline">Sidewalk Depth </div> 
-    <input type="range" min="0" max="12" value="5" class="slider" id="input_sidewalk_depth_">
-    <br> <br/>
 
-    <br> <br/>
-    <input type="checkbox" id="div_unit_type_" name="checkbox" value="Divide">
-    <label for="checkbox"> Divide by Distance </label>
-    <br> <br/> 
-
-    <div class="inline">Unit Division Count </div> 
-    <input type="range" min="0" max="30" value="10" class="slider" id="input_unit_divide_count_">
-    <br> <br/>
-
-    <div class="inline">Unit Divison Measure </div> 
-    <input type="range" min="10" max="60" value="20" class="slider" id="input_unit_divide_distance_">
-    <br> <br/>
-
-    <div class="inline">Courtyard Offset </div> 
-    <input type="range" min="0" max="10" value="4" class="slider" id="input_courtyard_offset_">
-    <br> <br/>
-
-    <div class="inline">Corner Unit Tolerance </div> 
-    <input type="range" min="0" max="10" value="2" class="slider" id="input_corner_unit_buffer_">
-    <br> <br/>
-
-    <button type="button">Bake Geometry</button>
+    <!--------------------------------- SAVE AND EXPORT--------------------------------->
+    <div class="tab-content">
+      <h3>SAVE AND EXPORT</h3>
+      <p style="font-size: 14px;">The following settings assign the roof type to each block </p>
+      <button type="button">Save Geometry to Rhino</button>
     <p style="font-size: 14px;"> This will bake the geometry into a new layer on Rhino viewport, and will earase any previous layout solution using the same curve or on the same layer. </p>
+    </div>   
+
+
+  <div class="footer">
+    <p>Authors: Sanjay Somanath & Ossama Gabrallah </p>
   </div>
-
-  <div class="tab-content">
-    <h3>SECTION TWO</h3>
-    <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. </p>
-    <div class="inline">Param Settings </div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <div class="inline">Param Settings </div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <div class="inline">Param Settings </div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <button type="button">Bake Geometry</button>
-    <p style="font-size: 20px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-  </div>
-
-  <div class="tab-content">
-    <h3>SECTION THREE</h3>
-    <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. </p>
-    <div class="inline">Param Settings </div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <div class="inline">Param Settings </div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <div class="inline">Param Settings </div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <button type="button">Bake Geometry</button>
-    <p style="font-size: 20px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-  </div>
-
-
-</div>
-</div>
-
-<div class="footer">
-  <p>Authors: Sanjay Somanath & Ossama Gabrallah </p>
-</div>
 </body>
 
 </html>
