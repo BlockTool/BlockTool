@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
+        /*  Radio Button Stuff */
 
+        /*  END Radio Button Stuff */
         html,body {
             background-color: #FBAB7E;
             background-image: linear-gradient(160deg, #96c5d4 0%, #0c2044 90%);
@@ -255,7 +258,7 @@
       width: 100%; /* Width of the outside container */
       }
 
-      button {
+      button,input[type=button] {
         border: none;
         color: rgb(0, 0, 0);
         font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -269,14 +272,23 @@
         margin-bottom: 10px;
         font-size: 14px;
         padding: 5px 40px;
-        transition-duration: 0.4s;
+        
+        
         cursor: pointer;
         box-shadow: 0 8px 5px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.05);
         
       }
-      button:hover {
+      button:hover,input[type=button]:hover {
+        transition-duration: 0.3s;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         background-color: #0047a3; 
+        color: white;
+      }
+      button:active,input[type=button]:active {
+        transition-duration: 3s;
+        margin-left: 100px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        background-color: rgb(15, 199, 174); 
         color: white;
       }
 
@@ -858,20 +870,31 @@
       <h3>SAVE AND EXPORT</h3>
       <p style="font-size: 14px;"></p>Save to Rhino as you draft (default). Select "Save at the end" 
       if you would like to select the active curve and save one-by-one at the end. </p>
-      <input type="checkbox" id="hide_all_issues_" name="checkbox" value="Divide">
+      <input type="checkbox" id="save_at_the_end" name="checkbox" value="Divide">
       <label for="checkbox"> Save at the End? </label>
+      
       <br> <br/>
-      <button type="button">Save Config to File</button>
-      <button type="button">Create Materials</button>
+      <p>Save Config To File</p>
+      <input type="button" id="save_config_to_file" value="False" onmousedown="down01()" onmouseup="up01()"></input>
+      <p>Create Materials</p>
+      <input type="button" id="create_materials" value="False" onmousedown="down02()" onmouseup="up02()"></input>
       <br> <br/>
-      <button type="button">Save Geometry to Rhino</button>
-      <button type="button">Override Config and Save to Rhino</button>
-      <button type="button">Delete from Rhino Rhino</button>
+      <p>Save Geometry to Rhino</p>
+      <input type="button" id="save_geometry_to_rhino" value="False" onmousedown="down03()" onmouseup="up03()"></input>
+      <p>Override Config and Save to Rhino</p>
+      <input type="button" id="save_rhino_and_write_config" value="False" onmousedown="down04()" onmouseup="up04()"></input>
+      <p>Delete from Rhino Rhino</p>
+      <input type="button" id="delete_from_rhino" value="False" onmousedown="down05()" onmouseup="up05()"></input>
       <br> <br/>
-      <button type="button">Export to Sketchup</button>
-      <button type="button">Save to Excel</button>
-      <button type="button">Save Chart</button>
-      <button type="button">Open Chart in Browser</button>
+      <p>Export to Sketchup</p>
+      <input type="button" id="export_to_sketchup" value="False" onmousedown="down06()" onmouseup="up06()"></input>
+      <p>Save to Excel</p>
+      <input type="button" id="save_to_excel" value="False" onmousedown="down07()" onmouseup="up07()"></input>
+      <p>Save Chart</p>
+      <input type="button" id="save_chart" value="False" onmousedown="down08()" onmouseup="up08()"></input>
+      <p>Open Chart in Browser</p>
+      <input type="button" id="open_chart" value="False" onmousedown="down09()" onmouseup="up09()"></input>
+      <br> <br/>
     </div>
 <!--------------------------------- END DIV --------------------------------->   
   </div>   
@@ -882,5 +905,60 @@
 
 <!--------------------------------- END BODY --------------------------------->
 </body>
-
+<script>
+  function down01() {
+    document.getElementById("save_config_to_file").value = "True";
+  }
+  function up01() {
+    document.getElementById("save_config_to_file").value = "False";
+  }
+  function down02() {
+    document.getElementById("create_materials").value = "True";
+  }
+  function up02() {
+    document.getElementById("create_materials").value = "False";
+  }
+  function down03() {
+    document.getElementById("save_geometry_to_rhino").value = "True";
+  }
+  function up03() {
+    document.getElementById("save_geometry_to_rhino").value = "False";
+  }
+  function down04() {
+    document.getElementById("save_rhino_and_write_config").value = "True";
+  }
+  function up04() {
+    document.getElementById("save_rhino_and_write_config").value = "False";
+  }
+  function down05() {
+    document.getElementById("delete_from_rhino").value = "True";
+  }
+  function up05() {
+    document.getElementById("delete_from_rhino").value = "False";
+  }
+  function down06() {
+    document.getElementById("export_to_sketchup").value = "True";
+  }
+  function up06() {
+    document.getElementById("export_to_sketchup").value = "False";
+  }
+  function down07() {
+    document.getElementById("save_to_excel").value = "True";
+  }
+  function up07() {
+    document.getElementById("save_to_excel").value = "False";
+  }
+  function down08() {
+    document.getElementById("save_chart").value = "True";
+  }
+  function up08() {
+    document.getElementById("save_chart").value = "False";
+  }
+  function down09() {
+    document.getElementById("open_chart").value = "True";
+  }
+  function up09() {
+    document.getElementById("open_chart").value = "False";
+  }
+  </script>
 </html>
