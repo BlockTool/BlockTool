@@ -12,7 +12,6 @@
         html,body {
             background-color: #FBAB7E;
             background-image: linear-gradient(160deg, #96c5d4 0%, #0c2044 90%);
-            
             height: 95%;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -73,6 +72,7 @@
           position: relative;
           list-style: none;
           background-color: rgba(0, 0, 0, 0.1);
+
           
         }
 
@@ -302,33 +302,37 @@
 
         appearance: none;
         width: 80%; /* Full-width */
-        height: 5px; /* Specified height */
-        background-color: #b8e5ff;
+        height: 20px; /* Specified height */
+        background-color: transparent;
         outline: none; /* Remove outline */
         opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
         -webkit-transition: .2s; /* 0.2 seconds transition on hover */
         transition: opacity .2s;
-        
       }
 
-
-      .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 20px;
-        height: 20px;
-        border-radius: 30%; 
-        background: #ffffff;
-        cursor: pointer;
-}
       ::-ms-track{
         /* IE Range track */
-        background: transparent;
-              border-color: transparent;
-              border-width: 5px 0; /* allows taller thumb */
-              color: transparent;
-              height: 3px;
+        border: none;
+        height: 5px;
       }
+      ::-ms-fill-lower {
+        background: transparent;
+      }
+      ::-ms-fill-upper {
+        background: transparent;
+      }
+      ::-ms-thumb{
+        /* IE Range track */
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+        -ms-appearance: none;
+        border: 1;
+      }
+
       /* Mouse-over effects */
       .slider:hover {
         opacity: 1; /* Fully shown on mouse-over */
@@ -909,6 +913,7 @@
 <!--------------------------------- END BODY --------------------------------->
 </body>
 <script>
+  
   function down01() {
     document.getElementById("save_config_to_file").value = "True";
   }
