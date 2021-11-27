@@ -419,7 +419,7 @@
   </div> 
 
   <div class="inline" style="color: #fff;">Select Active Curve </div>
-  <input type="range" min="0" max="50" value="0" class="slider" id="active_curve_">
+  <input type="range" min="1" max="20" value="0" class="slider" id="active_curve_">
   <br> <br/>
 
   <div class="inline" style="color: #fff;">Colour Units by (Default - Footprint Area - Total Unit Area - Shape) </div>
@@ -500,6 +500,14 @@
       <div class="inline">Sidewalk Depth </div> 
       <input type="range" min="0" max="12" value="5" class="slider" id="input_sidewalk_depth_">
       <br> <br/>
+      
+      <div class="inline">Global Ground Floor </div>
+      <input type="range" min="3" max="10" value="4" class="slider" id="global_ground_flr">
+      <br> <br/>
+
+      <div class="inline">Global Last Floor </div>
+      <input type="range" min="3" max="10" value="5" class="slider" id="global_last_flr">
+      <br> <br/>
 
       <br> <br/>
       <input type="checkbox" id="div_unit_type_" name="checkbox" value="Divide">
@@ -519,7 +527,7 @@
       <br> <br/>
 
       <br> <br/>
-      <input type="checkbox" id="div_unit_type_" name="checkbox" value="Divide">
+      <input type="checkbox" id="show_corner_circle" name="checkbox" value="Divide">
       <label for="checkbox"> Show Corner Unit Circle </label>
       
       <br> <br/>
@@ -665,150 +673,73 @@
     <div class="tab-content">
       <h3>ROOF TYPES</h3>
       <p style="font-size: 14px;">The following settings assign the roof type to each block </p>
-      <label for="Roof">Building 01 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_01">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 02 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_02">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 03 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_03">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 04 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_04">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 05 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_05">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 06 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_06">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 07 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_07">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 08 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_08">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 09 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_09">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 10 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_10">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 11 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_11">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 12 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_12">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 13 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_13">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 14 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_14">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 15 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_15">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 16 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_16">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 17 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_17">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 18 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_18">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 19 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_19">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
-      <br> <br/>
-      <label for="Roof">Building 20 - Number of Floors:</label>
-      <select name="roof" id="bld_rf_20">
-        <option value="flat">Flat</option>
-        <option value="green">Green</option>
-        <option value="gable">Gable</option>
-      </select>
+      <div class="inline">Building 1 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_01">
+
+      <div class="inline">Building 2 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_02">
+
+      <div class="inline">Building 3 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="0" class="slider" id="bld_rf_03">
+
+      <div class="inline">Building 4 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_04">
+
+      <div class="inline">Building 5 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_05">
+
+      <div class="inline">Building 6 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="0" class="slider" id="bld_rf_06">
+
+      <div class="inline">Building 7 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_07">
+
+      <div class="inline">Building 8 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_08">
+
+      <div class="inline">Building 9 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_09">
+
+      <div class="inline">Building 10 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="0" class="slider" id="bld_rf_10">
+
+      <div class="inline">Building 11- Roof Type  </div>
+      <input type="range" min="0" max="2" value="0" class="slider" id="bld_rf_11">
+
+      <div class="inline">Building 12 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_12">
+
+      <div class="inline">Building 13 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_13">
+
+      <div class="inline">Building 14 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_14">
+
+      <div class="inline">Building 15 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_15">
+
+      <div class="inline">Building 16 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="0" class="slider" id="bld_rf_16">
+
+      <div class="inline">Building 17 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="0" class="slider" id="bld_rf_17">
+
+      <div class="inline">Building 18 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_18">
+
+      <div class="inline">Building 19 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="bld_rf_19">
+
+      <div class="inline">Building 20 - Roof Type  </div>
+      <input type="range" min="0" max="2" value="2" class="slider" id="bld_rf_20">
     </div>
     <!--------------------------------- ROOF PARAMTERS--------------------------------->
     <div class="tab-content">
       <h3>ROOF PARAMTERS</h3>
       <p style="font-size: 14px;">Three roof types are available. Flat, Green and Sloped. Change the settings for each roof type here. </p>
+      <div class="inline">Default Roof Type (0 - Flat, 1 - Green, 2 - Sloped)  </div>
+      <input type="range" min="0" max="2" value="1" class="slider" id="default_roof_type">
+      <br> <br/>
       <div class="inline">Green Roof Offset  </div>
       <input type="range" min="0" max="10" value="1" class="slider" id="offset_roof_grn">
       <br> <br/>
@@ -858,16 +789,22 @@
         - Checks for walls that are shorter than the minimum edge length. Finally, Minimum Angle 
         Tolerence - Checks for angles plus or minus the selected angle over 90 degrees. </p>
 
-      <div class="inline">Roof Sloped Height  </div>
-      <input type="range" min="0" max="10" value="4.5" class="slider" id="ht_roof_slp">
+      <div class="inline">Default Floor Number  </div>
+      <input type="range" min="0" max="10" value="4" class="slider" id="default_floor_number">
       <br> <br/>
 
-      <div class="inline">Roof Sloped Height  </div>
-      <input type="range" min="0" max="10" value="4.5" class="slider" id="ht_roof_slp">
+      <div class="inline">Default Floor Height  </div>
+      <input type="range" min="0" max="10" value="3" class="slider" id="default_floor_height">
       <br> <br/>
 
-      <div class="inline">Roof Sloped Height  </div>
-      <input type="range" min="0" max="10" value="4.5" class="slider" id="ht_roof_slp">
+      <div class="inline">Minimum Floor Area  </div>
+      <input type="range" min="80" max="300" value="100" class="slider" id="minimum_floor_area">
+      <br> <br/>
+      <div class="inline">Minimum Edge Length </div>
+      <input type="range" min="0" max="100" value="2" class="slider" id="minimum_edge_length">
+      <br> <br/>
+      <div class="inline">Minimum Angle Tolerence  </div>
+      <input type="range" min="0" max="100" value="10" class="slider" id="minimum_angle_tol">
       <br> <br/>
     </div>
 
