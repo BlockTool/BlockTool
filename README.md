@@ -1,4 +1,5 @@
 # BlockTool
+![Block tool GIF](.github/src/ParkingOptimiser.gif)
 ![Block tool GIF](.github/src/SOS_Demo.gif)
 ![Block tool GIF](.github/src/BlockToolDemo.gif)
 ![Block tool GIF](.github/src/SOS_Chart.gif)
