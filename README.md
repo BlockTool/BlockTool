@@ -1,7 +1,7 @@
 # BlockTool
-![Block tool GIF](.github/media/ParkingOptimiser.gif)
+![Block tool GIF](media/ParkingOptimiser.gif)
 ![Block tool GIF](.github/src/SOS_Demo.gif)
-![Block tool GIF](.github/media/makeuserwait.gif)
+![Block tool GIF](media/makeuserwait.gif)
 ![Block tool GIF](.github/src/SOS_Chart.gif)
 # Design Tools (Minimum Viable Product)
 Description :
