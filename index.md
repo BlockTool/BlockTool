@@ -1,9 +1,10 @@
 # BlockTool
-
+![Block tool GIF](media/demo.gif)
 BlockTool is essentially a set of grasshopper scripts that performs simple geometric operations on lines drawn in Rhino 
 to generate buildings. The geometrical operations follow a set of customisable rules. Additional functionality such as 
 saving parameters, calculating built-up area, exporting csv and sketchup files have been added.
 A set of useful(ish) error messages have also been added in to help users understand why the script is misbehaving.
+
 
 The goal with this tool is to provide a basic template to build additional functionality and for new users of grasshopper
 to see what is possible.
@@ -93,3 +94,5 @@ This allows users to set custom values for each curve and then retrieve them by 
 * Delete from Rhino - Safest way to clear geometry from Rhino. Delete breaks sometimes.  
 * Export to sketchup - Exports baked geometry to a skp file  
 * Save to excel - Saves a csv file of the block properties. Block number, number of units, bta of each unit is added to the csv.  
+
+The project is developed by [Ossama Gabrallah](https://www.linkedin.com/in/ossama-gabrallah/) and [Sanjay Somanath](https://www.linkedin.com/in/snjsomanath/).
