@@ -1,5 +1,5 @@
 # BlockTool
-
+![Block tool GIF](media/demo.gif)
 BlockTool is essentially a set of grasshopper scripts that performs simple geometric operations on lines drawn in Rhino 
 to generate buildings. The geometrical operations follow a set of customisable rules. Additional functionality such as 
 saving parameters, calculating built-up area, exporting csv and sketchup files have been added.
