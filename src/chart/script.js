@@ -11,17 +11,83 @@ var data = [
         id: "B1", 
         parent: "0", 
         name: "Block 1"
+    }, 
+    {
+        color: "#0A9396", 
+        id: "B2", 
+        parent: "0", 
+        name: "Block 2"
     }
 ,
     {
-        "value": 8375, 
+        "value": 2957, 
         "parent": "B1", 
         "name": "unit 0"
     }, 
     {
-        "value": 9189, 
+        "value": 4435, 
         "parent": "B1", 
         "name": "unit 1"
+    }, 
+    {
+        "value": 2587, 
+        "parent": "B1", 
+        "name": "unit 2"
+    }, 
+    {
+        "value": 5234, 
+        "parent": "B1", 
+        "name": "unit 3"
+    }, 
+    {
+        "value": 3517, 
+        "parent": "B1", 
+        "name": "unit 4"
+    }, 
+    {
+        "value": 1848, 
+        "parent": "B1", 
+        "name": "unit 5"
+    }, 
+    {
+        "value": 307, 
+        "parent": "B1", 
+        "name": "unit 6"
+    }, 
+    {
+        "value": 3411, 
+        "parent": "B2", 
+        "name": "unit 1"
+    }, 
+    {
+        "value": 2587, 
+        "parent": "B2", 
+        "name": "unit 2"
+    }, 
+    {
+        "value": 5914, 
+        "parent": "B2", 
+        "name": "unit 3"
+    }, 
+    {
+        "value": 3873, 
+        "parent": "B2", 
+        "name": "unit 4"
+    }, 
+    {
+        "value": 1469, 
+        "parent": "B2", 
+        "name": "unit 5"
+    }, 
+    {
+        "value": 1478, 
+        "parent": "B2", 
+        "name": "unit 6"
+    }, 
+    {
+        "value": 530, 
+        "parent": "B2", 
+        "name": "unit 7"
     }
 ];
 
