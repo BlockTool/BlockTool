@@ -88,6 +88,8 @@ or from a config file that was previously saved.
 ![img.png](media/rules.png)
 #Save and Export
 ![img.png](media/saveandexport.png)
+# Visualise results
+![img.png](media/charts.gif)
 It is best to follow the order of the commands in this panel.  
 * Save config to file - Saves a csv of the existing configurations and links it to the active curve.
 This allows users to set custom values for each curve and then retrieve them by changing the active curve slider.  
