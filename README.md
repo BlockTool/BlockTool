@@ -29,7 +29,7 @@ scripts, but why re-invent a slower wheel?
 * Install dependencies from <code>[www.food4rhino.com](www.food4rhino.com)</code>
 * Download the <code>demo</code> folder and the <code>src</code> folder from github
 * Open the Rhino file inside <code>demo/3D Model/Demo_Site.3dm</code>
-* Open the Grasshopper file <code>inside src/BlockTool_0.34.gh</code>  
+* Open the Grasshopper file <code>inside src/BlockTool_0.40.gh</code>  
 
 
 FOR BUILDINGS  
